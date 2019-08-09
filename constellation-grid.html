@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB4b1vwv4Zm3vdoF84kB6OZqxO18XhZrRU",
+            authDomain: "boosterhub-42247.firebaseapp.com",
+            databaseURL: "https://boosterhub-42247.firebaseio.com",
+            projectId: "boosterhub-42247",
+            storageBucket: "",
+            messagingSenderId: "27447881272",
+            appId: "1:27447881272:web:1696043c1308700e"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="libs/js/constellation-grid.js" defer></script>
+    <link rel="stylesheet" href="libs/js/constellation-grid.js">
+    <title>Constellation Grid</title>
+</head>
+<body>
+    <div class="constellation-grid">
+        <form class="constellation-grid-form">
+            <div class="contact-name-input">
+                <label for="contact-name">Name</label>
+                <input type="text" name="contact-name">
+            </div>
+            <div class="email-input">
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+            <div class="phone-num-input">
+                <label for="phone-num">Phone Number</label>
+                <input type="text" name="phone-num">
+            </div>
+            <div class="constellation-grid-button">
+                <input type="submit" value="Create Contact">
+            </div>
+        </form>
+    </div>
+    
+    <table class="contact-table">
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </thead>
+        
+        <tbody>
+            
+        </tbody>
+    </table>
+</body>
+</html>
