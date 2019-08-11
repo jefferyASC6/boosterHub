@@ -1,11 +1,23 @@
 const database = firebase.database().ref();
-const body = document.querySelector("body");
+const posts = document.querySelector(".posts")
 
 const createPost = (rowData) => {
     const row = rowData.val();
-    const h1 = document.createElement("h1");
-    h1.innerText = row.TITLE;
-    body.appendChild(h1)
+    const post = document.createElement("div");
+    post.className = "post";
+    const title = document.createElement("h1");
+    title.innerText = row.TITLE;
+    const name = document.createElement("h2");
+    name.innerText = row.NAME;
+    const date = document.createElement("h3");
+    date.innerText = row.DATE;
+    const postContent = document.createElement("p");
+    postContent.innerText = row.POST;
+    post.appendChild(title);
+    post.appendChild(name);
+    post.appendChild(date);
+    post.appendChild(postContent);
+    posts.appendChild(post);
 }
 
 
