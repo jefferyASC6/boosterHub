@@ -8,10 +8,10 @@ function resetForm() {
     const name = document.querySelector("#name-input input");
     const post = document.querySelector("#post-input input");
     
-    title.value = null;
-    date.value = null;
-    name.value = null;
-    post.value = null;
+    title.value = "";
+    date.value = "";
+    name.value = "";
+    post.value = "";
 }
 
 function createDataObj() {
@@ -20,14 +20,10 @@ function createDataObj() {
     const date = document.querySelector("#date-input input");
     const name = document.querySelector("#name-input input");
     const post = document.querySelector("#post-input input");
-    if (title.value === "" || date.value === "" || name.value === "" || post.value === "") {
-        alert("Fill out every launchpad form");
-    } else {
-        dataObj.TITLE = title.value;
-        dataObj.DATE = date.value;
-        dataObj.NAME = name.value;
-        dataObj.POST = post.value;
-    }
+    dataObj.TITLE = title.value;
+    dataObj.DATE = date.value;
+    dataObj.NAME = name.value;
+    dataObj.POST = post.value;
     return dataObj;
 }
 
