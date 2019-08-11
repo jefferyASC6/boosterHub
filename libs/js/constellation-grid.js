@@ -10,6 +10,12 @@ const phoneNum = document.querySelector(".phone-num-input input");
 // Setting up local storage 
 let itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")): []; // data we store
 
+itemsArray = itemsArray.sort((a, b)=>{
+    if (a.NAME > b.NAME) return 1;
+    else if (b.NAME > a.NAME) return -1;
+    else return 0
+})
+
 localStorage.setItem("items", JSON.stringify(itemsArray)); // Stores data in the ls
 
 const data = JSON.parse(localStorage.getItem("items")); // Retrieves the data we need from the ls
@@ -113,7 +119,6 @@ const updateContact = (row) => {
 form.addEventListener("submit", createContact);
 
 // Puts the contact info onto the table
-
 data.forEach(item => {
     insertRows(item);
 });
