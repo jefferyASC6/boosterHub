@@ -8,8 +8,22 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
 .creators{
-    flex-direction: column;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.mjje{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
 }
