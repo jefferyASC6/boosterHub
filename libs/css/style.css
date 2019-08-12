@@ -60,14 +60,27 @@ body{
     width: 90%;
     padding: 30px;
     justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .button{
-    background-color: white;
     border: solid 2px white;
-    color: #010B30;
-    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Blinker', sans-serif;
+    color: white;
+    height: 65px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
     margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.button:hover{
+    background-color: white;
+    border: solid 2px #010B30;
+    color: #010B30;
 }
 
 #serviceSection{
@@ -173,3 +186,36 @@ body{
     min-height: 8vh;
 }
 
+.button{
+    border: solid 2px white;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Blinker', sans-serif;
+    color: white;
+    height: 65px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button:hover{
+    background-color: white;
+    border: solid 2px #010B30;
+    color: #010B30;
+}
+
+#launchpad-button{
+    border: solid 2px white;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Blinker', sans-serif;
+    color: white;
+    height: 65px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#launchpad-button:hover{
+    background-color: white;
+    border: solid 2px #010B30;
+    color: #010B30;
+}
