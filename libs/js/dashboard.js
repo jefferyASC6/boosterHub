@@ -11,12 +11,15 @@ const createPost = (rowData) => {
     name.innerText = row.NAME;
     const date = document.createElement("h3");
     date.innerText = row.DATE;
+    const email = document.createElement("p");
+    email.innerText = row.EMAIL
     const postContent = document.createElement("p");
     postContent.innerText = row.POST;
     post.appendChild(title);
     post.appendChild(name);
     post.appendChild(date);
     post.appendChild(postContent);
+    post.appendChild(email);
     posts.appendChild(post);
 }
 
