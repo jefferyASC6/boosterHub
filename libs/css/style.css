@@ -1,3 +1,11 @@
+:root {
+    --mainDeepBlue: #010b30;
+    --darkBlueGreen: #3c8799;
+    --mediumBlueGreen: #7dbccc;
+    --light: #c2ebf5;
+    --connect: #91e5fb;
+}
+
 * {
     margin: 0;
     padding: 0;
