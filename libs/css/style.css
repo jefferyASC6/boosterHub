@@ -14,6 +14,31 @@
     box-sizing: border-box;
 }
 
+/* About us*/
+.creator h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.creator h2{
+    text-align: center;
+}
+
+.creator p{
+    text-align: center;
+}
+
+.creators{
+    display: flex;
+    flex-direction: column;
+}
+
+.mjje{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+=======
 body{
     display: flex;
     flex-flow: column wrap;
