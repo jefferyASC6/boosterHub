@@ -184,6 +184,7 @@ nav {
     color: white;
     border-radius: 10px;
     margin-top: 30px;
+    margin-bottom: 15px;
     padding: 10px;
     font-family: 'Blinker', sans-serif;
     font-weight: 700;
@@ -196,17 +197,26 @@ nav {
     padding: 30px;
     justify-content: center;
     text-align: center;
-}
-
+  
 .button{
-    background-color: white;
     border: solid 2px white;
-    color: #010B30;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Blinker', sans-serif;
+    color: white;
+    height: 65px;
+    width: 100px;
     border-radius: 50px;
-    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 15px;
     padding: 10px;
     text-decoration: none;
+}
 
+.button:hover{
+    background-color: white;
+    border: solid 2px #010B30;
+    color: #010B30;
 }
 
 
@@ -290,3 +300,36 @@ nav {
 
 
 
+.button{
+    border: solid 2px white;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Blinker', sans-serif;
+    color: white;
+    height: 65px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button:hover{
+    background-color: white;
+    border: solid 2px #010B30;
+    color: #010B30;
+}
+
+#launchpad-button{
+    border: solid 2px white;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Blinker', sans-serif;
+    color: white;
+    height: 65px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#launchpad-button:hover{
+    background-color: white;
+    border: solid 2px #010B30;
+    color: #010B30;
+}
