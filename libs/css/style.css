@@ -259,6 +259,7 @@ nav {
     margin-left: 0px;
     margin-right: 0px;
     width: 30%;
+    box-shadow: 0px 0px 5px grey;
 }
 
 
@@ -288,6 +289,7 @@ nav {
     background-image: 
         linear-gradient(to right,
         #010b30, #3c8799,#7dbccc, #c2ebf5);
+    height: 100vh;
 }
 
 .imgProgress{
@@ -301,8 +303,17 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
+}
+
+/*  Launchpad */
+
+#launchpad-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #launchpad-button{
@@ -321,3 +332,19 @@ nav {
     border: solid 2px #010B30;
     color: #010B30;
 }
+
+/* Footer */
+footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Blinker';
+    font-size: 20px;
+    background-color: var(--mainDeepBlue);
+    color: white;
+    border-top: 2px solid white;
+}
+
+
+     
