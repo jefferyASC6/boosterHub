@@ -8,18 +8,8 @@ h1{
     text-align: center;
 }
 
-.flex-eric{
+.creators{
     flex-direction: column;
     display: flex;
     justify-content: center;
-}
-
-.flex-image{
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-}
-
-p{
-
 }
