@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    text-align: center;
+}
+
+.flex-container{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-image{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
