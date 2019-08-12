@@ -74,11 +74,15 @@ body{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    /* background-image: 
+        linear-gradient(to right,
+        #010b30, #3c8799,#7dbccc, #c2ebf5); */
 }
 
 .serviceCards{
     display: flex;
     background-color: #010B30;
+    /* background-color: rgba(0,0,0,0); */
     justify-content: space-evenly;
     width: 100%;
 }
@@ -121,12 +125,16 @@ body{
 #howToUse{
     display: flex;
     flex-direction: column;
+    background-image: 
+        linear-gradient(to right,
+        #010b30, #3c8799,#7dbccc, #c2ebf5);
 }
 
 .imgProgress{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .imgCards{
