@@ -28,8 +28,8 @@ const createArticle = (newsArticle) => {
     // img of the article
     const img = document.createElement("img");
     img.src = newsArticle.urlToImage;
-    img.style.width = "200px";
-    img.style.height = "200px;"
+    img.style.width = "250px";
+    img.style.height = "200px"
 
     // title of the article
     const title = document.createElement("h1");

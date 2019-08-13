@@ -25,8 +25,9 @@ body{
 
 /* Nav */
 .nav {
-    width: 100%;
+    min-width: 100%;
     background-color: rgb(250, 250, 250);
+    margin: auto;
 }
 
 .nav-links li{
@@ -210,10 +211,10 @@ nav {
 }
   
 .button{
-    border: solid 2px white;
-    background-color: white;
+    border: solid 2px var(--lightblue);
+    background-color: var(--lightblue);
     font-family: 'Blinker', sans-serif;
-    color: black;
+    color: var(--mainDeepBlue);
     border-radius: 50px;
     font-size: 20px;
     margin-bottom: 30px;
@@ -224,9 +225,9 @@ nav {
  }
 
 .button:hover{
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 2px white;
-    color: white;
+    background-color: rgb(220, 241, 255);
+    border: solid 2px rgb(220, 241, 255);
+    color: var(--mainDeepBlue);
 }
 
 
@@ -249,7 +250,7 @@ nav {
 
 .services{
     display: flex;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--white);
     padding: 20px;
     margin: 15px;
     border-radius: 5px;
@@ -262,6 +263,10 @@ nav {
     margin-right: 0px;
     width: 30%;
     box-shadow: 0px 0px 5px grey;
+}
+
+.services:hover {
+    transform: translateY(-10%);
 }
 
 
@@ -343,47 +348,117 @@ nav {
     text-align: center;
 }
 
-#launchpad-button:hover{
-    background-color: white;
-    border: solid 2px #010B30;
-    color: #010B30;
-}
 
 /*  dashboard */
 
+.post-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-head h1{
+    font-family: 'Blinker';
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--mainDeepBlue);
+}
 
 
 /* articles */
 .article-container {
     width: 80%;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 #article-head h1 {
     text-align: center;
+    font-family: 'Blinker';
+    font-size: 45px;
+    font-weight: 800;
+    color: var(--mainDeepBlue);
 }
 
 .articles {
     display: flex;
+    justify-content: space-between;
 }
 
 .article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
+    border-right: 1px solid var(--light);
+    border-left: 1px solid var(--light);
+    line-height: 1.5em;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.article h1 {
+    font-size: 20px;
+    color: var(--mainDeepBlue);
+    transition: 0.3s ease;
+}
+
+.article h1:hover {
+    color: #77acb9;
+}
+
+.article h2 {
+    font-size: 16px;
+    margin: 10px;
+    color: var(--darkBlueGreen);
+}
+
+.article p {
+    font-size: 14px;
+    color: black;
 }
 
 .article a {
     text-decoration: none;
+    font-family: 'Blinker';
 }
+
+/*  constellation grid */
+
+
+
 
 
 /* About us*/
-.creator h1{
+#about-head {
     text-align: center;
-    text-decoration: underline;
+}
+
+#about-head h1 {
+    font-size: 45px;
+    font-family: 'Blinker';
+    font-weight: 800;
+}
+
+.creator {
+    padding: 10px;
+    background-color: var(--white);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px grey;
+}
+
+.creator img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .creator h2{
@@ -396,7 +471,11 @@ nav {
 
 .creators{
     display: flex;
-    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 44px;
+    justify-content: space-between;
+    font-family: 'Blinker';
 }
 
 .mjje{

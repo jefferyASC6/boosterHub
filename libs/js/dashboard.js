@@ -9,12 +9,15 @@ const createPost = (rowData) => {
     title.innerText = row.TITLE;
     const name = document.createElement("h2");
     name.innerText = row.NAME;
+    const email = document.createElement("h2");
+    email.innerText = row.EMAIL;
     const date = document.createElement("h3");
     date.innerText = row.DATE;
     const postContent = document.createElement("p");
     postContent.innerText = row.POST;
     post.appendChild(title);
     post.appendChild(name);
+    post.appendChild(email);
     post.appendChild(date);
     post.appendChild(postContent);
     posts.appendChild(post);
