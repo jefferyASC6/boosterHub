@@ -7,7 +7,7 @@ function resetForm() {
     const date = document.querySelector("#date-input input");
     const name = document.querySelector("#name-input input");
     const email = document.querySelector("#lp-email-input input");
-    const post = document.querySelector("#post-input input");
+    const post = document.querySelector("#post-input textarea");
     
     title.value = "";
     date.value = "";
@@ -22,7 +22,7 @@ function createDataObj() {
     const date = document.querySelector("#date-input input");
     const name = document.querySelector("#name-input input");
     const email = document.querySelector("#lp-email-input input");
-    const post = document.querySelector("#post-input input");
+    const post = document.querySelector("#post-input textarea");
     dataObj.TITLE = title.value;
     dataObj.DATE = date.value;
     dataObj.NAME = name.value;
