@@ -14,7 +14,6 @@
     box-sizing: border-box;
 }
 
-
 body{
     display: flex;
     flex-flow: column wrap;
@@ -306,10 +305,18 @@ nav {
 #howToUse{
     display: flex;
     flex-direction: column;
-    background-image: 
+    /* background-image: 
         linear-gradient(to right,
-        #010b30, #3c8799,#7dbccc, #c2ebf5);
-    height: 100vh;
+        #010b30, #3c8799,#7dbccc, #c2ebf5); */
+    background-image: url("/assets/connectionBackgroundFlip.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+}
+
+#howToTitle{
+    color: white;
 }
 
 .imgProgress{
@@ -317,6 +324,7 @@ nav {
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 100%;
+    align-items: center;
 }
 
 .imgCards{
@@ -324,10 +332,30 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--mainDeepBlue);
     text-align: center;
     width: 30%;
-    height: 100%;
+    height: 450px;
+    padding: 10px;
+    /* background-color: rgba(125,188,204,0.8); */
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+}
+
+.imgCardText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Blinker', sans-serif;
+    font-weight: 400;
+    color:white;
+    background-color: rgba(1,11,48, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    height: 30%;
+    font-size: 25px;
+    width: 90%;
 }
 
 /*  Launchpad */
@@ -452,6 +480,30 @@ textarea {
     color: var(--mainDeepBlue);
 }
 
+.posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-flow: column-reverse wrap;
+}
+
+.post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40%;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    border: solid 2px var(--mainDeepBlue);
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--white);
+    font-family: 'Blinker', sans-serif;
+    font-weight: 400;
+}
 
 /* articles */
 .article-container {
@@ -586,5 +638,23 @@ footer {
     border-top: 2px solid white;
 }
 
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainDeepBlue);
+}
 
-     
+i{
+    margin: 10px;
+    color: var(--mainDeepBlue);
+}
+
+i:link{
+    color: var(--mainDeepBlue);
+}
+
+i:visited{
+    color: var(--mainDeepBlue);
+}
