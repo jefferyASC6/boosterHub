@@ -50,7 +50,7 @@ const insertRows = (data) => {
     cell1.innerHTML = data.NAME;
     cell2.innerHTML = data.EMAIL;
     cell3.innerHTML = data.PHONENUM;
-    cell4.innerHTML = '<a onclick="onEdit(this)">Edit</a> <a onclick="onDelete(this)">Delete</a>';
+    cell4.innerHTML = '<a onclick="onEdit(this)" style="color: #1dde50">Edit</a>    <a onclick="onDelete(this)" style="color:red">Delete</a>';
 }
 
 // Resets the form after submit
