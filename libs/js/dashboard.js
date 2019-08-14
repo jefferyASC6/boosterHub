@@ -16,6 +16,7 @@ const createPost = (rowData) => {
     const email = document.createElement("p");
     email.innerText = row.EMAIL
     const tags = document.createElement("p");
+    tags.className = 'tags';
     tags.innerText = row.TAGS;
     const postContent = document.createElement("p");
     postContent.innerText = row.POST;

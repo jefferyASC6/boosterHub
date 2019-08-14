@@ -5,7 +5,7 @@ const table = document.querySelector("tbody");
 // Input fields
 const name = document.querySelector(".contact-name-input input");
 const email = document.querySelector(".email-input input");
-const phoneNum = document.querySelector(".phone-num-input input");
+const idea = document.querySelector(".idea-input input");
 
 // Setting up local storage 
 let itemsArray = localStorage.getItem("items") ? JSON.parse(localStorage.getItem("items")): []; // data we store
@@ -31,7 +31,7 @@ const moveToLocalStorage = () => {
     const jsonData = {
         NAME: name.value,
         EMAIL: email.value,
-        PHONENUM: phoneNum.value
+        IDEA: idea.value
     };
 
     itemsArray.push(jsonData);
@@ -49,7 +49,7 @@ const insertRows = (data) => {
 
     cell1.innerHTML = data.NAME;
     cell2.innerHTML = data.EMAIL;
-    cell3.innerHTML = data.PHONENUM;
+    cell3.innerHTML = data.IDEA;
     cell4.innerHTML = '<a onclick="onEdit(this)" style="color: #1dde50">Edit</a>    <a onclick="onDelete(this)" style="color:red">Delete</a>';
 }
 
@@ -60,7 +60,7 @@ const resetForm = () => {
     const phoneNum = document.querySelector(".phone-num-input input");
     name.value = "";
     email.value = "";
-    phoneNum.value = "";
+    idea.value = "";
 }
 
 // Callback function to event listener
@@ -92,12 +92,12 @@ const onEdit = (td) => {
     selectedRow = td.parentElement.parentElement;
     name.value = selectedRow.cells[0].innerHTML;
     email.value = selectedRow.cells[1].innerHTML
-    phoneNum.value = selectedRow.cells[2].innerHTML;
+    idea.value = selectedRow.cells[2].innerHTML;
 }
 
 const updateContact = (row) => {
     for (let item of itemsArray) {
-        if (item.PHONENUM === row.cells[2].innerHTML) {
+        if (item.IDEA === row.cells[2].innerHTML) {
             itemsArray.splice(itemsArray.indexOf(item),1);
         }
     }
@@ -105,7 +105,7 @@ const updateContact = (row) => {
     const jsonData = {
         NAME: name.value,
         EMAIL: email.value,
-        PHONENUM: phoneNum.value
+        IDEA: idea.value
     };
 
     itemsArray.push(jsonData);
