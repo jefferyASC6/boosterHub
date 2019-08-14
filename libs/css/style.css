@@ -21,6 +21,7 @@ body{
     background-color: white;
     justify-content: center;
     overflow-x: hidden;
+    font-family: 'Blinker';
 }
 
 /* Nav */
@@ -516,7 +517,84 @@ textarea {
 
 
 /*  constellation grid */
+.constellation-grid {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.constellation-grid-form input {
+    padding: 10px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid black;
+    text-align: center;
+    color: grey;
+    width: 80%;
+}
+
+.constellation-grid-form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.constellation-grid-form div {
+    align-content: center;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.constellation-grid h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.contact-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.constellation-grid-button input{
+    background-color: var(--mainDeepBlue);
+    cursor: pointer;
+    color: var(--white);
+}
+
+.constellation-grid-button input:hover {
+    background-color: #0c275e;
+}
+
+.constellation-grid input:hover::placeholder {
+    color: rgb(52, 162, 206);
+}
+
+tbody a {
+    cursor: pointer;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td {
+    border: 1px solid black;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
 
 
 
