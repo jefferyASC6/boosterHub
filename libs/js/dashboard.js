@@ -13,6 +13,8 @@ const createPost = (rowData) => {
     email.innerText = row.EMAIL;
     const date = document.createElement("h3");
     date.innerText = row.DATE;
+    const email = document.createElement("p");
+    email.innerText = row.EMAIL
     const postContent = document.createElement("p");
     postContent.innerText = row.POST;
     post.appendChild(title);
@@ -20,6 +22,7 @@ const createPost = (rowData) => {
     post.appendChild(email);
     post.appendChild(date);
     post.appendChild(postContent);
+    post.appendChild(email);
     posts.appendChild(post);
 }
 
