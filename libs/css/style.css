@@ -207,26 +207,50 @@ nav {
     font-size: 45px;
 }
 
-.textAbout{
+.textAboutBox{
     display: flex;
     color: var(--mainDeepBlue);
-    width: 70%;
+    width: 60%;
     padding: 30px;
     justify-content: center;
     align-items: center;
     text-align: right;
-    line-height: 1.75em;
-    font-size: 18px;
     background-color: rgba(125,188,204,0.5);
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.textAboutLiftoff{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:var(--mainDeepBlue);
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.textAbout{
+    display: flex;
+    color: var(--mainDeepBlue);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content:center;
+    text-align: right;
+    align-items: center;
+    line-height: 1.75em;
+    font-size:20px;
 }
 
 #aboutTitle{
     padding: 0px;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .button{
@@ -331,7 +355,7 @@ nav {
 .imgCards{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color: var(--mainDeepBlue);
     text-align: center;
@@ -362,7 +386,7 @@ nav {
 /*  Launchpad */
 #lp-head {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Blinker';
     color: var(--mainDeepBlue);
     margin-top: 15px;
@@ -593,6 +617,15 @@ textarea {
 
 
 /*  constellation grid */
+
+#constellationGridTitle{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Blinker';
+    color: var(--mainDeepBlue);
+    margin-top: 15px;
+}
+
 .constellation-grid {
     margin-top: 20px;
     display: flex;
@@ -693,6 +726,7 @@ td {
     margin-right: 10px;
     border-radius: 10px;
     box-shadow: 0 0 4px grey;
+    width: 25%;
 }
 
 .creator img {
