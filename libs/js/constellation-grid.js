@@ -78,7 +78,7 @@ const onDelete = (td) => {
     const row = td.parentElement.parentElement;
     if (confirm("Are you sure you want to delete this contact")) {
         for (let item of itemsArray) {
-            if (item.PHONENUM === row.cells[2].innerHTML) {
+            if (item.IDEA === row.cells[2].innerHTML) {
                 itemsArray.splice(itemsArray.indexOf(item),1)
             } 
         }
