@@ -747,8 +747,6 @@ td {
 
 .creators{
     display: flex;
-    width: 80%;
-    margin: auto;
     margin-bottom: 44px;
     justify-content: space-between;
     font-family: 'Blinker';
@@ -759,6 +757,37 @@ td {
     margin-left: auto;
     margin-right: auto;
     width:50%;
+}
+
+@media screen and (max-width: 1100px) {
+    .creator img {
+        height: 175px;
+        width: 175px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .creator img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .creators {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .creator {
+        width: 75%;
+        margin-bottom: 15px;
+    }
 }
 
 /* Footer */
