@@ -486,6 +486,31 @@ textarea {
     background-color: #367585;
 }
 
+@media screen and (max-width: 1000px) {
+    .launchpad-form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .launchpad-form {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    #lp-head h1{
+        font-size: 38px;
+    }
+
+    .launchpad-form input {
+        width: 80%;
+    }
+
+    .launchpad-form textarea {
+        width: 80%;
+    }
+}
+
 
 /*  dashboard */
 
