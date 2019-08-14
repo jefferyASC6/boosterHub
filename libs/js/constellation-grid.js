@@ -57,7 +57,7 @@ const insertRows = (data) => {
 const resetForm = () => {
     const name = document.querySelector(".contact-name-input input");
     const email = document.querySelector(".email-input input");
-    const phoneNum = document.querySelector(".phone-num-input input");
+    const idea = document.querySelector(".phone-num-input input");
     name.value = "";
     email.value = "";
     idea.value = "";
