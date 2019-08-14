@@ -14,6 +14,7 @@ function resetForm() {
     name.value = "";
     email.value = "";
     post.value = "";
+    email.value = "";
 }
 
 function createDataObj() {
