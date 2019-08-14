@@ -7,14 +7,15 @@ function resetForm() {
     const date = document.querySelector("#date-input input");
     const name = document.querySelector("#name-input input");
     const email = document.querySelector("#lp-email-input input");
+    const tags = document.querySelector("#tags input")
     const post = document.querySelector("#post-input textarea");
     
     title.value = "";
     date.value = "";
     name.value = "";
     email.value = "";
+    tags.value = "";
     post.value = "";
-    email.value = "";
 }
 
 function createDataObj() {
@@ -23,11 +24,13 @@ function createDataObj() {
     const date = document.querySelector("#date-input input");
     const name = document.querySelector("#name-input input");
     const email = document.querySelector("#lp-email-input input");
+    const tags = document.querySelector("#tags input")
     const post = document.querySelector("#post-input textarea");
     dataObj.TITLE = title.value;
     dataObj.DATE = date.value;
     dataObj.NAME = name.value;
     dataObj.EMAIL = email.value;
+    dataObj.TAGS = tags.value;
     dataObj.POST = post.value;
     return dataObj;
 }
@@ -38,7 +41,7 @@ const submitToDatabase = evnt => {
     
     const postInfo = createDataObj();
 
-    if (Object.keys(postInfo).length === 5) {
+    if (Object.keys(postInfo).length === 6) {
         database.push(postInfo);
         resetForm();
     }

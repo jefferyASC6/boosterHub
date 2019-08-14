@@ -9,12 +9,14 @@ const createPost = (rowData) => {
     title.innerText = row.TITLE;
     const name = document.createElement("h2");
     name.innerText = row.NAME;
-    const email = document.createElement("h2");
-    email.innerText = row.EMAIL;
+    const _email = document.createElement("h2");
+    _email.innerText = row.EMAIL;
     const date = document.createElement("h3");
     date.innerText = row.DATE;
     const email = document.createElement("p");
     email.innerText = row.EMAIL
+    const tags = document.createElement("p");
+    tags.innerText = row.TAGS;
     const postContent = document.createElement("p");
     postContent.innerText = row.POST;
     post.appendChild(title);
@@ -23,6 +25,7 @@ const createPost = (rowData) => {
     post.appendChild(date);
     post.appendChild(postContent);
     post.appendChild(email);
+    post.appendChild(tags);
     posts.appendChild(post);
 }
 

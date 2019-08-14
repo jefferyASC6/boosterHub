@@ -465,6 +465,30 @@ textarea {
 
 /*  dashboard */
 
+/*  Search bar */
+.search-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#search-bar {
+    outline: none;
+    width: 75%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: var(--white);
+    font-family: 'Blinker';
+    font-size: 16px;
+}
+
+#search-bar:hover::placeholder {
+    color: rgb(40, 134, 221);
+}
+
+/*  */
+
 .post-container {
     width: 80%;
     margin: auto;
