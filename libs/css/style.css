@@ -896,6 +896,11 @@ td {
     text-align: center;
 }
 
+.creator h3{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
 .creator p{
     text-align: center;
 }
