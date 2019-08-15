@@ -196,7 +196,7 @@ nav {
 #aboutBooster{
     display: flex;
     flex-flow: column wrap;
-    background-image: url("/assets/connectionBackground.png");
+    background-image: url("assets/connectionBackground.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -372,7 +372,7 @@ nav {
     /* background-image: 
         linear-gradient(to right,
         #010b30, #3c8799,#7dbccc, #c2ebf5); */
-    background-image: url("/assets/connectionBackgroundFlip.png");
+    background-image: url("assets/connectionBackgroundFlip.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
