@@ -14,13 +14,18 @@
     box-sizing: border-box;
 }
 
-body{
+body, html{
     display: flex;
     flex-flow: column wrap;
     background-color: white;
     justify-content: center;
     overflow-x: hidden;
     font-family: 'Blinker';
+    width: 100vw;
+}
+
+body {
+    position: relative;
 }
 
 /* Nav */
