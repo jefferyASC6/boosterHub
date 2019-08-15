@@ -176,6 +176,7 @@ nav {
 .content{
     display: flex;
     width: 90%;
+    height: 100%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -272,7 +273,40 @@ nav {
     color: var(--mainDeepBlue);
 }
 
+.serviceTitle {
+    text-align: center;
+}
 
+@media screen and (max-width: 1175px) {
+    .title {
+        font-size: 35px;
+    }
+
+    .textAboutLiftoff {
+        font-size: 30px;
+    }
+
+    .textAbout {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .textAbout {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 911px) {
+    .serviceTitle {
+        text-align: center;
+    }
+
+    .textAbout {
+        font-size: 14px;
+    }
+}
 /* Services */
 #serviceSection{
     display: flex;
@@ -382,6 +416,34 @@ nav {
     font-size: 25px;
     width: 90%;
 }
+
+@media screen and (max-width: 1100px) {
+    .imgCards p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .serviceCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .services {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        height: 100%;
+    }
+}
+
+
+
 
 /*  Launchpad */
 #lp-head {
@@ -654,7 +716,15 @@ textarea {
     font-family: 'Blinker';
 }
 
+@media screen and (max-width: 1100px) {
+    .articles {
+        flex-direction: column;
+    }
 
+    .article {
+        margin-bottom: 20px;
+    }
+}
 
 
 /*  constellation grid */
@@ -758,7 +828,39 @@ td {
     text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+    .constellation-grid-form {
+        width: 85%;
+    }
 
+    #constellationGridTitle {
+        font-size: 40px;
+    }
+
+    .contact-table {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .contact-table {
+        width: 87%;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    
+    td {
+        border: 1px solid black;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+    }
+}
 
 
 /* About us*/
